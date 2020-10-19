@@ -1,9 +1,8 @@
 <h1>Hello!</h1>
 
-<button (click)="OnClick()">Click me!</button>
+<input type="text" [(ngModel)]="title">
 
-<input type="text" (keyup.enter)="OnInput($event)" (blur)="OnBlur(mine.value)" #mine>
+<p>{{title}}</p>
 
-<p><strong>{{value}}</strong></p>
 
 <app-post></app-post>

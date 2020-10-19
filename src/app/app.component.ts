@@ -7,26 +7,9 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
 
-  title = 'New Text here!';
-  value = '';
+  title = 'Initial';
 
-  constructor() {
-
+  OnInput(event: any) {
+    this.title = event.target.value;
   }
-
-  OnInput(event: KeyboardEvent) {
-
-    console.log(event);
-    this.value = (event.target as HTMLInputElement).value;
-  }
-
-  OnClick() {
-    console.log('click!');
-  }
-
-  OnBlur(str: string) {
-    this.value = str;
-    console.log(str);
-  }
-
 }
