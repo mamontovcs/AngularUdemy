@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'AngularProject';
+
+  title = 'New Text here!';
+  value = '';
+
+  constructor() {
+
+  }
+
+  OnInput(event: KeyboardEvent) {
+
+    console.log(event);
+    this.value = (event.target as HTMLInputElement).value;
+  }
+
+  OnClick() {
+    console.log('click!');
+  }
+
+  OnBlur(str: string) {
+    this.value = str;
+    console.log(str);
+  }
+
 }

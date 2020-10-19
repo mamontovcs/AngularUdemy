@@ -1,4 +1,9 @@
 <h1>Hello!</h1>
 
-<app-post></app-post>
+<button (click)="OnClick()">Click me!</button>
+
+<input type="text" (keyup.enter)="OnInput($event)" (blur)="OnBlur(mine.value)" #mine>
+
+<p><strong>{{value}}</strong></p>
+
 <app-post></app-post>
