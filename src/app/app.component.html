@@ -1,11 +1,3 @@
 <h1>Hello!</h1>
 
-<button (click)="toggle = !toggle">Toggle</button>
-<button (click)="toggle = 111">Set 111</button>
-
-<div [ngSwitch]="toggle">
-
-  <p *ngSwitchCase="true" class="red">Red</p>
-  <p *ngSwitchCase="false" class="blue">Blue</p>
-  <p *ngSwitchDefault>Default</p>
-</div>
+<p>{{ now | date : 'long' }}</p>
