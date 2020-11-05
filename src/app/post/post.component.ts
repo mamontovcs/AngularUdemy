@@ -3,10 +3,10 @@ import {
   Component,
   ContentChild,
   DoCheck,
-  ElementRef,
+  ElementRef, EventEmitter,
   Input,
   OnChanges,
-  OnInit,
+  OnInit, Output,
   SimpleChanges,
   ViewChild
 } from '@angular/core';
@@ -22,9 +22,15 @@ export class PostComponent implements OnInit, OnChanges, DoCheck, AfterContentIn
 
   @Input() post: Post;
   @ContentChild('info', {static: true}) infoRef: ElementRef;
+  @Output() onRemove = new EventEmitter<number>();
+
 
   constructor() {
     console.log('constructor');
+  }
+
+  removePost() {
+    this.onRemove.emit(this.post.id);
   }
 
   ngOnInit(): void {

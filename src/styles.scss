@@ -50,6 +50,25 @@ img {
 }
 
 .btn:hover {
+  opacity: 2.2;
+}
+
+.btnRemove {
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  display: inline-block;
+  background: #ff3550;
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+}
+
+.btnRemove:hover {
   opacity: 0.8;
 }
 
@@ -62,6 +81,7 @@ img {
   padding: 1rem;
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
+  position: relative;
 }
 
 input,
