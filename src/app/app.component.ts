@@ -14,7 +14,7 @@ export interface Post {
 export class AppComponent {
 
   posts: Post[] = [
-    {title: 'Мой первый пост', text: 'Я все еще учу Ангуляр'},
+    //{title: 'Мой первый пост', text: 'Я все еще учу Ангуляр'},
     {title: 'Мой второй пост', text: 'Я хочу быть фулл стэком'},
   ];
 
