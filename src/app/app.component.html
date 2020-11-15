@@ -26,4 +26,19 @@
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem officia pariatur, quis quo reiciendis tempora.
   </p>
 
+  <button class="btn" (click)="isVisible = !isVisible">Button</button>
+<!--  <div *ngIf="isVisible" class="wrap">-->
+<!--    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur distinctio, magnam maiores minus ratione tempore temporibus voluptate? Necessitatibus, pariatur?</p>-->
+<!--  </div>-->
+
+<!--  <ng-template [ngIf]="isVisible"> &lt;!&ndash; The same as *ngIf&ndash;&gt;-->
+<!--    <div  class="wrap">-->
+<!--      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur distinctio, magnam maiores minus ratione tempore temporibus voluptate? Necessitatibus, pariatur?</p>-->
+<!--    </div>-->
+<!--  </ng-template>-->
+
+  <div  class="wrap" *appIfNot="!isVisible">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur distinctio, magnam maiores minus ratione tempore temporibus voluptate? Necessitatibus, pariatur?</p>
+  </div>
+
 </div>

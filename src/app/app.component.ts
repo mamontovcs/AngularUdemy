@@ -13,6 +13,8 @@ export interface Post {
 })
 export class AppComponent implements OnInit {
 
+  isVisible = true;
+
   posts: Post[] = [
     {title: 'Мой первый пост', text: 'Я все еще учу Ангуляр', id: 3123123},
     {title: 'Мой второй пост', text: 'Я хочу быть фулл стэком', id: 345678},
