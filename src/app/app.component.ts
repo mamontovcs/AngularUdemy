@@ -10,7 +10,8 @@ export interface Post {
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  providers: [CounterService]
 })
 export class AppComponent implements OnInit {
 
