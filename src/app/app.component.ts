@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Observable} from 'rxjs';
+import {CounterService} from './services/counter.service';
 
 export interface Post {
   title: string;
@@ -15,6 +16,9 @@ export class AppComponent implements OnInit {
 
   search = '';
   searchField = 'title';
+
+  constructor(private counter: CounterService) {
+  }
 
   p: Promise<string> = new Promise<string>(resolve => {
     setTimeout(() => {

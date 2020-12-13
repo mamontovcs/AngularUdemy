@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Angular Pipes</h1>
+  <h1>Angular Services</h1>
 
   <input type="text" [(ngModel)]="search">
 
@@ -20,4 +20,12 @@
   <p>Wait for it .... {{p | async}}</p>
   <p>Date: {{date$ |  async}}</p>
   <p>Date: {{date |  date:'long'}}</p>
+
+  <div class="card">
+    <h2>App counter: {{counter.counter}}</h2>
+
+    <button class="btn" (click)="counter.increase()">Increase</button>
+    <button class="btn" (click)="counter.decrease()">Decrease</button>
+  </div>
+
 </div>
